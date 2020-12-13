@@ -1,0 +1,11 @@
+
+
+/* put navbar at top */
+
+.navbar {
+    overflow: hidden;
+    background-color: #beecb5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
