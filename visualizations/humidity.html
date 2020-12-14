@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+
+<!--Create head tag-->
+  <head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patrick Saitta">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+
+    <!--stylesheets (Bootstrap has to go first)-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.css" media=screen>
+    
+    <!--create title for homepage-->
+    <title>~~Global Weather Visualization Data~~</title>
+
+  </head>
+
+  <body>
+    <!--create navbar-->
+    <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="../index.html">WeatherData Home</a>
+          </div>
+          <div class="navbar-right">
+            <a href="../comparison.html">Comparison</a>
+            <a href="../data.html">Data</a>
+            <div class="dropdown">
+                    <button class="dropdown_btn" href="#" data_toggle="dropdown" role="button">Plots <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown_content">
+                        <a href="temperature.html">Maximum Temperature</a>
+                        <a href="humidity.html">Humidity</a>
+                        <a href="cloudiness.html">Cloudiness</a>
+                        <a href="wind_speed.html">Wind Speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--end of navbar code-->
+
+    
+    <!--create main container, below navbar-->
+    
+    <div class="container">
+
+        <section class="row" id="content">
+            
+            <!--temperature visualization data summary-->
+            <div class="col-md-8">
+                <article class="temperature_summary">
+                    <h2>Latitude's Affect on Temperature</h2>
+                    <img src="../assets/Fig_2.png" id="humidity_image">
+                    <p>From the humidity plot, it seems that globally the air is relatively humid (>60% humidity) and there are few places with a % humidity less than 40%. We see a sort of bimodal distrbution of the latitudes of such low-moisture cities - they appear to be centered around +/- 20 degrees above the equator, which corresponds to where much of the Earth's hot deserts lie (e.g. Sahara desert, American Southwest).</p>
+                    <p>That notwithstanding, we don't see a real correlation between latitude and percent humidity. This implies that humidity may be dominated by other factors, like proximity to bodies of water and jet stream patterns.</p>
+                </article>
+            </div>
+            
+            <!--visualization sidebar-->
+            <div class="col-md-4">
+                <section id="visualization_pane">               
+                    <div class="visualization_pane_content">
+                        <h3>Explore Various Visualizations Below</h3>
+                        <div id="images">
+                            <a href="temperature.html"><img src="../assets/Fig_1.png" alt="Latitude vs. Max Temperature (F)" class="vis-thumb"></a>
+                            <a href="humidity.html"><img src="../assets/Fig_2.png" alt="Latitude vs. Humidity (%)" class="vis-thumb"></a>
+                            <a href="cloudiness.html"><img src="../assets/Fig_3.png" alt="Latitude vs. Cloudiness (%)" class="vis-thumb"></a>
+                            <a href="wind_speed.html"><img src="../assets/Fig_4.png" alt="Latitude vs. Wind Speed (mph)" class="vis-thumb"></a>
+                        </div>
+
+
+                    </div>
+                </section> 
+            </div>
+        </section>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+        <p><em>WeatherData's Weather Data Analysis. 2020. All rights reserved.</em></p>
+    </footer>
+    
+    
+    
+    </body>
