@@ -76,6 +76,10 @@
     margin-top: 90px;
 }
 
+#comparison_header {
+    margin-top:20px;
+}
+
 .vis-thumb {
     height: 100%;
     width: 100%;
