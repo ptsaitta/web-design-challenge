@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+
+<!--Create head tag-->
+  <head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patrick Saitta">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+
+    <!--stylesheets (Bootstrap has to go first)-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css" media=screen>
+    
+    <!--create title for homepage-->
+    <title>~~Global Weather Visualization Data~~</title>
+
+  </head>
+
+  <body>
+    <!--create navbar-->
+    <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">WeatherData Home</a>
+          </div>
+          <div class="navbar-right">
+            <a href="comparison.html">Comparison</a>
+            <a href="data.html">Data</a>
+            <div class="dropdown">
+                    <button class="dropdown_btn" href="#" data_toggle="dropdown" role="button">Plots <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown_content">
+                        <a href="visualizations/temperature.html">Maximum Temperature</a>
+                        <a href="visualizations/humidity.html">Humidity</a>
+                        <a href="visualizations/cloudiness.html">Cloudiness</a>
+                        <a href="visualizations/wind_speed.html">Wind Speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--end of navbar code-->
+
+    <!--create main container, below navbar-->
+    
+    <div class="container">
+
+        <section class="row" id="content">
+            
+            <!--Put a li'l header before the plots-->
+            <div class="col-s-12" id="comparison_header">
+                <h2><i>Look below to compare how latitude affects a panoply of weather phenomena</i></h2>
+            </div>
+
+            <!--put in plots, 2 side by side on medium and larger screens, so col-md-6-->
+            <div class="col-md-6">
+                <h4 class="comparison_page">Latitude versus Temperature</h4>
+                <a href="visualizations/temperature.html"><img src="assets/Fig_1.png" class="img_responsive"></a>
+                <hr class="visible-sm visible-sm">
+            </div>
