@@ -20,7 +20,7 @@
 
   <body>
     <!--create navbar-->
-    <div class="navbar">
+    <nav class="navbar">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">WeatherData Home</a>
@@ -39,8 +39,51 @@
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
 
+    <!--end of navbar code-->
+
+    <!--strap in for bootstrap section~~-->
+    <!--create main container, below navbar-->
+    
+    <div class="container">
+
+        <section class="row" id="content">
+            
+            <!--use most of (left side of) screen for the summary-->
+            <div class="col-md-8">
+                <article class="landing_summary">
+                    <h1>Welcome to WeatherData's Latitudinal Analysis!</h1>
+                    <img src="assets/Fig_1.png" id="landing_image">
+                    <p>Hello! Have you ever thought about how latitude affects weather? Surely, one assumes that temperature is highest near the equator and decreases as you head toward the poles, but have you seen the data? What other weather phenomena may correlate with latitude?</p>
+                    <p>Check out our visualizations on the right side of the page to explore!</p>
+                </article>
+            </div>
+            
+            <!--use the remaining third (8 cols for summary, 4 for this part) for visualization sidebar-->
+            <div class="col-md-4">
+                <section id="visualization_pane">               
+                    <div class="visualization_pane_content">
+                        <h3>Explore Various Visualizations Below</h3>
+                        <div id="images">
+                            <a href="visualizations/temperature.html"><img src="assets/Fig_1.png" alt="Latitude vs. Max Temperature (F)" class="vis-thumb"></a>
+                            <a href="visualizations/humidity.html"><img src="assets/Fig_2.png" alt="Latitude vs. Humidity (%)" class="vis-thumb"></a>
+                            <a href="visualizations/cloudiness.html"><img src="assets/Fig_3.png" alt="Latitude vs. Cloudiness (%)" class="vis-thumb"></a>
+                            <a href="visualizations/wind_speed.html"><img src="assets/Fig_4.png" alt="Latitude vs. Wind Speed (mph)" class="vis-thumb"></a>
+                        </div>
+
+
+                    </div>
+                </section>
+
+
+
+
+                
+            </div>
+        </section>
+
+    </div>
 
 
 

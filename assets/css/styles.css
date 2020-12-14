@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
   }
 
 .navbar-right a {
@@ -70,3 +71,12 @@
 .dropdown:hover .dropdown_content {
     display: block;
   }
+
+#content {
+    margin-top: 90px;
+}
+
+.vis-thumb {
+    height: 100%;
+    width: 100%;
+}
